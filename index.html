@@ -3,55 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقع Vigito الشخصي</title>
+    <title>VIGITO GAMING | أخبار الألعاب</title>
     <style>
+        :root {
+            --primary: #ff4655; /* لون أحمر حماسي مثل Valorant */
+            --bg: #0f111a;
+            --card-bg: #1a1d29;
+        }
         body {
+            background-color: var(--bg);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1e293b, #0f172a);
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        }
+        header {
+            background-color: var(--card-bg);
+            padding: 20px;
             text-align: center;
+            border-bottom: 3px solid var(--primary);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
         }
         .container {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 40px;
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-            width: 80%;
-            max-width: 400px;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 10px;
         }
-        h1 { font-size: 2rem; color: #38bdf8; margin-bottom: 10px; }
-        .hero-text { font-size: 3rem; font-weight: bold; color: #38bdf8; margin: 10px 0; }
-        p { font-size: 1.2rem; color: #cbd5e1; line-height: 1.6; }
-        .social-links { margin-top: 20px; }
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background: #38bdf8;
-            color: #0f172a;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
+        .news-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border: 1px solid #333;
             transition: 0.3s;
         }
-        .btn:hover { background: #7dd3fc; transform: scale(1.05); }
+        .news-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+        }
+        .news-content {
+            padding: 15px;
+        }
+        .tag {
+            background: var(--primary);
+            color: white;
+            padding: 2px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        h2 { margin: 10px 0; color: #fff; }
+        p { color: #ccc; line-height: 1.6; }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>مرحباً بك في عالم</h1>
-        <div class="hero-text">VIGITO</div>
-        <p>مرحباً، أنا <strong>Vigito</strong>. وهذا هو موقعي الأول والاحترافي على الإنترنت!</p>
-        <div class="social-links">
-            <a href="#" class="btn">تابعني للمزيد</a>
+
+<header>
+    <h1>VIGITO <span style="color: var(--primary)">GAMING</span></h1>
+    <p>أحدث تسريبات وأخبار عالم الألعاب</p>
+</header>
+
+<div class="container">
+    <div class="news-card">
+        <div class="news-content">
+            <span class="tag">تسريبات</span>
+            <h2>آخر أخبار GTA VI</h2>
+            <p>توقعات جديدة تشير إلى موعد استعراض تريلر جديد قريباً.. ابقوا متيقظين!</p>
         </div>
     </div>
+
+    <div class="news-card">
+        <div class="news-content">
+            <span class="tag">تحديثات</span>
+            <h2>تحديث جديد للعبة Fortnite</h2>
+            <p>إضافة أسلحة جديدة وتغييرات في خريطة الموسم الحالي لزيادة الحماس.</p>
+        </div>
+    </div>
+
+    <div class="news-card">
+        <div class="news-content">
+            <span class="tag">بلايستيشن</span>
+            <h2>ألعاب خدمة Plus القادمة</h2>
+            <p>قائمة الألعاب المجانية لشهر فبراير تم كشفها رسمياً، والنتائج مبشرة جداً.</p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    تطوير Vigito &copy; 2026
+</div>
+
 </body>
 </html>
