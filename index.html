@@ -5,62 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIGITO GAMING | أخبار الألعاب</title>
     <style>
-        :root {
-            --primary: #ff4655; 
-            --bg: #0f111a;
-            --card-bg: #1a1d29;
-        }
-        body {
-            background-color: var(--bg);
-            color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: var(--card-bg);
-            padding: 20px;
-            text-align: center;
-            border-bottom: 3px solid var(--primary);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-        }
-        .container {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 10px;
-        }
-        .news-card {
-            background-color: var(--card-bg);
-            border-radius: 12px;
-            overflow: hidden;
-            margin-bottom: 20px;
-            border: 1px solid #333;
-            transition: 0.3s;
-            cursor: pointer;
-        }
-        .news-card:hover {
-            border-color: var(--primary);
-            transform: translateY(-5px);
-        }
-        .news-content {
-            padding: 15px;
-        }
-        .tag {
-            background: var(--primary);
-            color: white;
-            padding: 2px 10px;
-            border-radius: 5px;
-            font-size: 12px;
-            font-weight: bold;
-        }
-        h2 { margin: 10px 0; color: #fff; }
-        p { color: #ccc; line-height: 1.6; }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            color: #666;
-            font-size: 14px;
-        }
+        :root { --primary: #ff4655; --bg: #0f111a; --card-bg: #1a1d29; }
+        body { background-color: var(--bg); color: white; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; }
+        header { background-color: var(--card-bg); padding: 20px; text-align: center; border-bottom: 3px solid var(--primary); }
+        .container { max-width: 1000px; margin: 20px auto; padding: 10px; }
+        .news-card { background-color: var(--card-bg); border-radius: 12px; margin-bottom: 20px; border: 1px solid #333; transition: 0.3s; cursor: pointer; }
+        .news-card:hover { border-color: var(--primary); transform: translateY(-5px); }
+        .news-content { padding: 15px; }
+        .tag { background: var(--primary); color: white; padding: 2px 10px; border-radius: 5px; font-size: 12px; font-weight: bold; }
+        h2 { margin: 10px 0; }
+        p { color: #ccc; }
         a { text-decoration: none; color: inherit; }
     </style>
 </head>
@@ -78,29 +32,24 @@
             <div class="news-content">
                 <span class="tag">عاجل</span>
                 <h2>حريق في مكاتب Rockstar! هل تتغير اللعبة؟</h2>
-                <p>تسريبات حول حريق في فرع Rochester.. اضغط هنا لمعرفة هل ستتخذ الشركة هذا الحادث حجة لتغيير اللعبة أو تأجيلها؟</p>
+                <p>اضغط هنا لمعرفة تأثير حريق Rochester على GTA VI..</p>
             </div>
         </div>
     </a>
 
-    <div class="news-card">
-        <div class="news-content">
-            <span class="tag">تحديثات</span>
-            <h2>تحديث جديد للعبة Fortnite</h2>
-            <p>إضافة أسلحة جديدة وتغييرات في خريطة الموسم الحالي لزيادة الحماس.</p>
+    <a href="lego-fortnite.html">
+        <div class="news-card">
+            <div class="news-content">
+                <span class="tag">تحديثات</span>
+                <h2>تحديث LEGO Fortnite الجديد!</h2>
+                <p>عالم LEGO يتوسع بمميزات خرافية.. اضغط هنا لمعرفة التفاصيل كاملة.</p>
+            </div>
         </div>
-    </div>
+    </a>
 
-    <div class="news-card">
-        <div class="news-content">
-            <span class="tag">بلايستيشن</span>
-            <h2>ألعاب خدمة Plus القادمة</h2>
-            <p>قائمة الألعاب المجانية لشهر فبراير تم كشفها رسمياً، والنتائج مبشرة جداً.</p>
-        </div>
-    </div>
 </div>
 
-<div class="footer">
+<div class="footer" style="text-align: center; padding: 20px; color: #666;">
     تطوير Vigito &copy; 2026
 </div>
 
