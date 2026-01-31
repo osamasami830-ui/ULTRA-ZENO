@@ -6,7 +6,7 @@
     <title>VIGITO GAMING | أخبار الألعاب</title>
     <style>
         :root {
-            --primary: #ff4655; /* لون أحمر حماسي مثل Valorant */
+            --primary: #ff4655; 
             --bg: #0f111a;
             --card-bg: #1a1d29;
         }
@@ -36,6 +36,7 @@
             margin-bottom: 20px;
             border: 1px solid #333;
             transition: 0.3s;
+            cursor: pointer;
         }
         .news-card:hover {
             border-color: var(--primary);
@@ -60,6 +61,7 @@
             color: #666;
             font-size: 14px;
         }
+        a { text-decoration: none; color: inherit; }
     </style>
 </head>
 <body>
@@ -70,13 +72,16 @@
 </header>
 
 <div class="container">
-    <div class="news-card">
-        <div class="news-content">
-            <span class="tag">تسريبات</span>
-            <h2>آخر أخبار GTA VI</h2>
-            <p>توقعات جديدة تشير إلى موعد استعراض تريلر جديد قريباً.. ابقوا متيقظين!</p>
+    
+    <a href="gta-news.html">
+        <div class="news-card">
+            <div class="news-content">
+                <span class="tag">عاجل</span>
+                <h2>حريق في مكاتب Rockstar! هل تتغير اللعبة؟</h2>
+                <p>تسريبات حول حريق في فرع Rochester.. اضغط هنا لمعرفة هل ستتخذ الشركة هذا الحادث حجة لتغيير اللعبة أو تأجيلها؟</p>
+            </div>
         </div>
-    </div>
+    </a>
 
     <div class="news-card">
         <div class="news-content">
