@@ -3,85 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIGITO GAMING | أخبار الألعاب</title>
+    <title>VIGITO GAMING | المركز الإخباري</title>
     <style>
-        :root { --primary: #ff4655; --bg: #0f111a; --card-bg: #1a1d29; --rochester: #38bdf8; }
-        body { background-color: var(--bg); color: white; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; }
-        header { background-color: var(--card-bg); padding: 20px; text-align: center; border-bottom: 3px solid var(--primary); }
-        .container { max-width: 1000px; margin: 20px auto; padding: 10px; }
-        
-        /* تصميم البطاقات */
-        .news-card { background-color: var(--card-bg); border-radius: 12px; margin-bottom: 20px; border: 1px solid #333; transition: 0.3s; cursor: pointer; }
-        .news-card:hover { border-color: var(--primary); transform: translateY(-5px); }
-        .news-content { padding: 15px; }
-        
-        /* العلامات (Tags) */
-        .tag { background: var(--primary); color: white; padding: 2px 10px; border-radius: 5px; font-size: 12px; font-weight: bold; }
-        .tag-rochester { background: var(--rochester); }
-        
-        h2 { margin: 10px 0; }
-        p { color: #ccc; }
-        a { text-decoration: none; color: inherit; }
-
-        /* قسم روكستر الخاص */
-        .rochester-section { border: 2px dashed var(--rochester); padding: 15px; border-radius: 15px; margin-top: 30px; background: rgba(56, 189, 248, 0.05); }
-        .rochester-title { color: var(--rochester); font-weight: bold; margin-bottom: 15px; display: flex; align-items: center; }
+        :root { --confirm: #22c55e; --prob: #facc15; --bg: #0f111a; --card: #1a1d29; }
+        body { background-color: var(--bg); color: white; font-family: 'Segoe UI', sans-serif; margin: 0; }
+        header { background: var(--card); padding: 20px; text-align: center; border-bottom: 4px solid #38bdf8; }
+        .container { max-width: 900px; margin: 20px auto; padding: 10px; }
+        .news-card { background: var(--card); border-radius: 12px; margin-bottom: 15px; border: 1px solid #333; overflow: hidden; }
+        .status-bar { padding: 5px 15px; font-size: 13px; font-weight: bold; }
+        .confirmed { background: var(--confirm); color: black; }
+        .probability { background: var(--prob); color: black; }
+        .content { padding: 15px; }
+        .rockstar-link { color: #facc15; text-decoration: underline; font-weight: bold; cursor: pointer; }
+        h2 { margin: 5px 0; }
+        .footer { text-align: center; padding: 20px; color: #666; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>VIGITO <span style="color: var(--primary)">GAMING</span></h1>
-    <p>أحدث تسريبات وأخبار عالم الألعاب</p>
+    <h1>VIGITO <span style="color: #38bdf8">GAMING</span></h1>
+    <p>أخبار الألعاب بدقة واحترافية</p>
 </header>
 
 <div class="container">
-    
-    <a href="gta-news.html">
-        <div class="news-card">
-            <div class="news-content">
-                <span class="tag">عاجل</span>
-                <h2>حريق في مكاتب Rockstar! هل تتغير اللعبة؟</h2>
-                <p>اضغط هنا لمعرفة تأثير حريق Rochester على GTA VI..</p>
-            </div>
-        </div>
-    </a>
 
-    <a href="lego-fortnite.html">
-        <div class="news-card">
-            <div class="news-content">
-                <span class="tag">تحديثات</span>
-                <h2>تحديث LEGO Fortnite الجديد!</h2>
-                <p>عالم LEGO يتوسع بمميزات خرافية.. اضغط هنا للتفاصيل.</p>
-            </div>
+    <div class="news-card">
+        <div class="status-bar confirmed">✔ خبر مؤكد 100%</div>
+        <div class="content">
+            <h2>تحديث LEGO Fortnite الرسمي</h2>
+            <p>إطلاق التحديث رسمياً لجميع المنصات مع إضافة نظام البناء المتطور وشخصيات جديدة.</p>
         </div>
-    </a>
+    </div>
 
-    <div class="rochester-section">
-        <div class="rochester-title">📍 ركن أخبار Rochester (التسريبات الميدانية)</div>
-        
-        <div class="news-card" style="border-color: var(--rochester);">
-            <div class="news-content">
-                <span class="tag tag-rochester">تحقيق</span>
-                <h2>ماذا يحدث خلف أبواب Rochester؟</h2>
-                <p>شهود عيان أبلغوا عن حركة غريبة وشاحنات نقل معدات تخرج من الموقع ليلاً بعد حادثة الحريق. هل يتم نقل سيرفرات GTA VI لمكان سري؟</p>
-            </div>
+    <div class="news-card">
+        <div class="status-bar probability">⏳ احتمال 90% (تسريبات قوية)</div>
+        <div class="content">
+            <h2>خريطة GTA VI المسربة</h2>
+            <p>أحدث التقارير من داخل شركة <a href="rockstar-news.html" class="rockstar-link">Rockstar</a> تشير إلى أن الخريطة ستكون ضعف حجم خريطة الجزء السابق بمرتين.</p>
         </div>
+    </div>
 
-        <div class="news-card" style="border-color: var(--rochester);">
-            <div class="news-content">
-                <span class="tag tag-rochester">تسريب</span>
-                <h2>تأثر الموظفين في فرع Rochester</h2>
-                <p>تقارير غير مؤكدة تشير إلى أن الموظفين بدأوا العمل من المنازل "لأجل غير مسمى". هل هذا هروب من المأزق أم حماية لبيانات اللعبة؟</p>
-            </div>
+    <div class="news-card">
+        <div class="status-bar probability">⏳ احتمال 90%</div>
+        <div class="content">
+            <h2>العرض الثاني لـ GTA VI</h2>
+            <p>المحللون يتوقعون صدور العرض الجديد من <a href="rockstar-news.html" class="rockstar-link">Rockstar</a> في أواخر عام 2024 بناءً على السجلات المالية للشركة.</p>
         </div>
     </div>
 
 </div>
 
-<div class="footer" style="text-align: center; padding: 20px; color: #666;">
-    تطوير Vigito &copy; 2026
-</div>
+<div class="footer">تطوير Vigito &copy; 2026</div>
 
 </body>
 </html>
